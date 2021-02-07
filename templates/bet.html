@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{% block title %} {{ bet['bet'] }} {% endblock %}</h2>
+<span class="badge badge-primary">{{ bet['created'] }}</span>
+<p>{{ bet['better1'] }}</p>
+<p>{{ bet['better2'] }}</p>
+{% endblock %}

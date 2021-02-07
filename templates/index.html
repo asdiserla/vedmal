@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
+{% for bet in bets %}
+<a href="{{ url_for('bet', bet_id=bet['id']) }}">
+  <h2>{{ bet['bet'] }}</h2>
+</a>
+<span class="badge badge-primary">{{ bet['created'] }}</span>
+<hr>
+{% endfor %}
+{% endblock %}
