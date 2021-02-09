@@ -1,1 +1,3 @@
 # vedmal
+
+flask run
